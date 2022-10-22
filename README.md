@@ -14,3 +14,8 @@ In the project directory, you can run:
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 [NPM](https://www.npmjs.com/) OU [YARN](https://yarnpkg.com/)
+
+
+
+## Api - código aberto cliente:
+![Request_Api](https://user-images.githubusercontent.com/31622166/197315104-e533e199-3696-4bc0-bd60-7f30b5948bce.png)
