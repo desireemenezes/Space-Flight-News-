@@ -1,8 +1,17 @@
-import React , { useState, useEffect } from 'react';
+import React , {  useEffect } from 'react';
 import Api from  '../service/api';
 
 const Home = () => {
 	
+	// const [id, setId] = useState();
+	// const [title, setTitle] = useState();
+	// const [url, seUrl] = useState();
+	// const [imageUrl, setIimageUrl] = useState();
+	// const [newsSite, setNewSite]= useState();
+	// const [sumary, setSumary]= useState();
+	// const [publishedAt, setPublishedAt]= useState();
+	// const [featured, setFeatured]= useState(false);
+
 
 	useEffect(() => { 
 		async function load(){
@@ -11,14 +20,19 @@ const Home = () => {
 			})
 		}
 		load();
-	}, [])
+	},)
 	
 	return  (
-		
-		<div>Teste</div>
+	<>
+		<header className="">
+			fix
+		</header>
+	</>
+
+	
 	);
 }
 
-//
+
 
 export default Home;
