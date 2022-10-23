@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import '../index.css';
 
-import Home from '../views/Home';
+import Home from '../views';
 
 
 function Routes () {
