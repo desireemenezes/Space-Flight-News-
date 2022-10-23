@@ -1,29 +1,44 @@
-import React from 'react';
-import Api from  '../service/api';
+import React, { useState } from 'react';
+import { BsSearch } from "react-icons/bs";
+import logo from '../../assets/rocket.png';
 
-const Home = () => {
-	
-	// const [id, setId] = useState();
-	// const [title, setTitle] = useState();
-	// const [url, seUrl] = useState();
-	// const [imageUrl, setIimageUrl] = useState();
-	// const [newsSite, setNewSite]= useState();
-	// const [sumary, setSumary]= useState();
-	// const [publishedAt, setPublishedAt]= useState();
-	// const [featured, setFeatured]= useState(false);
+import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Navbar from 'react-bootstrap/Navbar';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
-	
-	return  (
-	<>
-		<header className="">
-		header
-		</header>
-	</>
+import * as S from './style'
+
+
+function Header (props) {
 
 	
-	);
-}
+
+	return (
+		<>
+		<S.Navigation >
+			<Navbar>
+				<Form className="input-search">
+					<Form.Control type="search" placeholder="Search" aria-label="Search"/>
+					<Button className='search'><BsSearch size={18} color='#fff'/></Button>
+				</Form>
+				<DropdownButton id="dropdown-basic-button" title="Sort">
+					<Dropdown.Item href="#/action-1">Older</Dropdown.Item>
+					<Dropdown.Item href="#/action-2">Newest</Dropdown.Item>
+				</DropdownButton>
+			</Navbar>
+		</S.Navigation>
+		<S.RowNav>
+        	<img src={logo} alt="Logo" className='logo' />
+			<Row className='title'>
+				Space Flight News
+			</Row>
+		</S.RowNav>
+		</>
+	  );
+	}
 
 
-
-export default Home;
+export default Header;

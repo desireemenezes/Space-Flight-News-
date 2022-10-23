@@ -12,3 +12,11 @@ code {
     monospace;
 }
 
+:root {
+  --placeholder: #ced4da;
+  --border: #ced4da;
+  --dark: #1e2022;
+  --dark-purple: #302e53;
+  --orange: #d07017;
+}
+

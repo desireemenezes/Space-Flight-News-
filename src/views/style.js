@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-export const Navbar = styled.div`
-.content {
-    width: 1920px;
+export const Content = styled.div`
+    width: 90%;
     margin: 0 auto;
-}
+    padding: 10px;
 
 `

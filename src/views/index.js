@@ -1,13 +1,13 @@
 import React  from 'react';
-import { Row } from 'reactstrap';
+import Header from '../components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import * as S from './style'
 const Home = () => {
     return (
-        <S.Navbar className="content">        
-            <Row>
-            </Row>
-    </S.Navbar>  
+        <S.Content>        
+				  <Header />
+        </S.Content>  
   );
 }
 
