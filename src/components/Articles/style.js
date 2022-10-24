@@ -3,25 +3,37 @@ import styled from 'styled-components';
 export const ContainerCard = styled.div`
     width: 80%;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 60px;
+
     .containercard {
         display: flex;
         flex-direction: row ;
         border: none;
-        max-height: 300px;
+        height: 300px;
+        @media(max-width: 1024px) {
+            flex-direction: column;
+            height: auto;
+        }
     }
     .containercard-reverse {
         display: flex;
         flex-direction: row-reverse ;
         border: none;
-        max-height: 300px;
+        height: 300px;
+        @media(max-width: 1024px) {
+            flex-direction: column;
+            height: auto;
+        }
     }
     .card-body {
         flex: 1; 
     }
     .card-img, .card-img-bottom, .card-img-top {
-      width: 50% !important;
+      width: 50% ;
       object-fit: cover;
+        @media(max-width: 1024px) {
+            width: 100% !important;
+        }
     }
     .card-title {
         font-weight: 600;

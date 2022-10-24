@@ -51,11 +51,10 @@ export const RowNav = styled.div`
     .logo {
         width: 200px;
         height: 200px;
-      
-        @media(max-width: 768px) {
-            width: 130px;
-            height: 130px;
-        }
+            @media(max-width: 768px) {
+                width: 130px;
+                height: 130px;
+            }
     }
     .title {
         font-size: 45px;
@@ -64,7 +63,12 @@ export const RowNav = styled.div`
         padding: 10px;
         padding-bottom: 40px;
         font-weight: 600;
-    }  
+            @media(max-width: 1024px) {
+                font-size: 25px;
+            }
+
+    }
+    
     .pulse {
         animation: pulse 0.7s infinite;
         display: table;

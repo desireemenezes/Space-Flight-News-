@@ -25,13 +25,13 @@ const Home = (props) => {
         <S.Content>        
 				  <Header />
           { article.map((articles, index) => {
-                if(index % 2 === 0){
-                  articles.event = true
-                } 
-              return(
-                <Articles event={articles.event} imageUrl={articles.imageUrl} title={articles.title} publishedAt={articles.publishedAt} newsSite={articles.newsSite} summary={articles.summary} key={articles.id}/> 
-               )
-              })
+            if(index % 2 === 0){
+              articles.event = true
+            } 
+            return(
+              <Articles event={articles.event} imageUrl={articles.imageUrl} title={articles.title} publishedAt={articles.publishedAt} newsSite={articles.newsSite} summary={articles.summary} key={articles.id}/> 
+              )
+            })
           }
         </S.Content>  
   );
