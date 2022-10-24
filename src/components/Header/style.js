@@ -46,12 +46,16 @@ export const RowNav = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 40px;
 
     .logo {
         width: 200px;
         height: 200px;
-        transform: rotate(45deg);
+      
+        @media(max-width: 768px) {
+            width: 130px;
+            height: 130px;
+        }
     }
     .title {
         font-size: 45px;
@@ -59,5 +63,36 @@ export const RowNav = styled.div`
         color: var(--dark-purple);
         padding: 10px;
         padding-bottom: 40px;
+        font-weight: 600;
     }  
+    .pulse {
+        animation: pulse 0.7s infinite;
+        display: table;
+        animation-direction: alternate;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+    }
+
+    @-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+    
+    }
+    }
+
+    @keyframes pulse {
+    0% {
+        transform: scale(1);
+    
+    }
+    100% {
+        transform: scale(1.1);
+    
+    }
+    }
+
 `

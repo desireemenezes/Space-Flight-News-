@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BsSearch } from "react-icons/bs";
 import logo from '../../assets/rocket.png';
 
@@ -11,10 +11,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 
 import * as S from './style'
 
-
-function Header (props) {
-
-	
+function Header () {
 
 	return (
 		<>
@@ -31,7 +28,7 @@ function Header (props) {
 			</Navbar>
 		</S.Navigation>
 		<S.RowNav>
-        	<img src={logo} alt="Logo" className='logo' />
+        	<img src={logo} alt="Logo" className='logo pulse' />
 			<Row className='title'>
 				Space Flight News
 			</Row>
