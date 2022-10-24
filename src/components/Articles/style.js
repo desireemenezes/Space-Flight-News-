@@ -9,7 +9,9 @@ export const ContainerCard = styled.div`
         display: flex;
         flex-direction: row ;
         border: none;
-        height: 300px;
+        height: 210px;
+        margin-left: 10px;
+        justify-content: center;
         @media(max-width: 1024px) {
             flex-direction: column;
             height: auto;
@@ -19,24 +21,38 @@ export const ContainerCard = styled.div`
         display: flex;
         flex-direction: row-reverse ;
         border: none;
-        height: 300px;
+        height: 210px;
+        margin-right: 10px;
+        justify-content: center;
         @media(max-width: 1024px) {
             flex-direction: column;
             height: auto;
         }
     }
     .card-body {
-        flex: 1; 
-    }
-    .card-img, .card-img-bottom, .card-img-top {
-      width: 50% ;
-      object-fit: cover;
-        @media(max-width: 1024px) {
-            width: 100% !important;
-        }
+        flex: inherit;
+        align-items: center ;
+        justify-content: center;
+        width: 35% ;
+        padding: 10px;
+
     }
     .card-title {
         font-weight: 600;
+    }
+`
+
+export const imagemContent = styled.div` 
+    width: 35%;
+    margin-right: 10px;
+    margin-left: 10px;
+    .card-img, .card-img-bottom, .card-img-top {
+      width: 100% ;
+      object-fit: cover;
+      height: 210px;
+        @media(max-width: 1024px) {
+            width: 100% !important;
+        }
     }
 `
 export const flexCard = styled.div`

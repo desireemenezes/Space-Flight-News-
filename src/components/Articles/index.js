@@ -12,18 +12,20 @@ function Articles ({imageUrl, title, summary, publishedAt, newsSite, id, event }
     return (
         <S.ContainerCard key={id}>
             <Card className={event === true ?  'containercard' : 'containercard-reverse'}>
-                <Card.Img variant="top" src={imageUrl} />
+                <S.imagemContent>
+                    <Card.Img src={imageUrl} alt="imagem url"/>
+                </S.imagemContent>
                 <Card.Body>
                     <Card.Title className='card-title'>{title}</Card.Title>
                 <S.flexCard>
-                        <Card.Subtitle >{date}</Card.Subtitle> <Button>{newsSite}</Button>
-                    </S.flexCard>
+                    <Card.Subtitle >{date}</Card.Subtitle> <Button>{newsSite}</Button>
+                </S.flexCard>
                     <Card.Text>
                     {summary.substring(0, 100)}
                     {summary.length > 100 ? '...' : ' '}
                     </Card.Text>
                     <S.flexButton>
-                        <Button variant="primary">Ver mais</Button>
+                        <Button variant="primary" alt="button">Ver mais</Button>
                     </S.flexButton>
                 </Card.Body>
          </Card>

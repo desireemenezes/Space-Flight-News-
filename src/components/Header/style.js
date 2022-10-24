@@ -46,7 +46,7 @@ export const RowNav = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 20px;
 
     .logo {
         width: 200px;
