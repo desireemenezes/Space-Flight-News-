@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerCard = styled.div`
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 60px;
 
@@ -15,6 +15,7 @@ export const ContainerCard = styled.div`
         @media(max-width: 1024px) {
             flex-direction: column;
             height: auto;
+            margin: 0;
         }
     }
     .containercard-reverse {
@@ -35,6 +36,9 @@ export const ContainerCard = styled.div`
         justify-content: center;
         width: 35% ;
         padding: 10px;
+        @media(max-width: 1024px) {
+            width: 100%;
+        }
 
     }
     .card-title {
@@ -46,6 +50,9 @@ export const imagemContent = styled.div`
     width: 35%;
     margin-right: 10px;
     margin-left: 10px;
+    @media(max-width: 1024px) {
+            width: 100% !important;
+    }
     .card-img, .card-img-bottom, .card-img-top {
       width: 100% ;
       object-fit: cover;
@@ -70,7 +77,6 @@ export const flexCard = styled.div`
    }
      
 `
-
 export const flexButton = styled.div`
    text-align: center;
    align-items: center;
@@ -80,3 +86,12 @@ export const flexButton = styled.div`
         border: none;
    }
 `    
+export const ModalCard = styled.div`
+   text-align: center;
+   align-items: center;
+
+   .btn {
+        background: var(--orange);
+        border: none;
+   }
+`   

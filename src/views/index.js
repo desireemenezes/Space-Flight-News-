@@ -1,11 +1,13 @@
 import React , { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Articles from '../components/Articles';
+import Footer from '../components/Footer';
 
 import Api from  '../service/api';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as S from './style'
+
 
 const Home = (props) => {
 
@@ -29,10 +31,11 @@ const Home = (props) => {
               articles.event = true
             } 
             return(
-              <Articles event={articles.event} imageUrl={articles.imageUrl} title={articles.title} publishedAt={articles.publishedAt} newsSite={articles.newsSite} summary={articles.summary} key={articles.id}/> 
+              <Articles event={articles.event} url={articles.url} imageUrl={articles.imageUrl} title={articles.title} publishedAt={articles.publishedAt} newsSite={articles.newsSite} summary={articles.summary} key={articles.id}/> 
               )
             })
           }
+          <Footer/>
         </S.Content>  
   );
 }

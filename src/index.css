@@ -14,3 +14,42 @@ body {
   --orange: #d07017;
 }
 
+.modal-title {
+  color: var(--dark-purple);
+  font-weight: 600 !important;
+  font-size: 18px;
+}
+.modal-header {
+  border: none !important;
+}
+.modal-body {
+  border: none !important;
+  display: flex;
+  align-items: center;
+}
+.img-modal {
+  width: 50%;
+  min-height: 150px;
+  object-fit: cover;
+}
+.modal-date {
+  color: var(--orange);
+  font-size: 12px;
+}
+.modal-footer {
+  border: none !important;
+  justify-content: center !important;
+}
+.btn-modal-footer {
+  background: var(--dark-purple) !important;
+}
+
+@media(max-width: 1024px) {
+  .modal-body {
+    flex-direction: column-reverse;
+  }
+  .img-modal {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
